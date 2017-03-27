@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+//    border: 1px solid red;
+}
+
+.container {
+    position: relative;
+    color: #444;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+    .candy,
+    .cake,
+    .gummie,
+    .halvah,
+    .candy-img,
+    .cake-img,
+    .gummie-img,
+    .halvah-img {
+        position: absolute;
+        top: -150px;
+    }
+    .candy,
+    .cake,
+    .gummie,
+    .halvah {
+        width: 360px;
+        left: 190px;
+    }
+    .candy-img,
+    .cake-img,
+    .gummie-img,
+    .halvah-img {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/sprite.png);
+        left: 550px;
+    }
+    .candy-img {
+        background-position: -100px 100px;
+    }
+    .cake-img {
+        background-position: 0 100px;
+    }
+    .gummie-img {
+        background-position: -200px 100px;
+    }
+    .halvah-img {
+        background-position: -300px 100px;
+    }
+    .candy {
+        animation-name: candy-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .candy-img {
+        animation-name: candy-img-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    .cake {
+        animation-name: cake-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .cake-img {
+        animation-name: cake-img-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    .gummie {
+        animation-name: gummie-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .gummie-img {
+        animation-name: gummie-img-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    .halvah {
+        animation-name: halvah-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .halvah-img {
+        animation-name: halvah-img-anim-1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes candy-anim-1 {
+    to {top: 50px;}
+}
+@keyframes candy-img-anim-1 {
+    to {top: 20px;}
+}
+@keyframes cake-anim-1 {
+    to {top: 170px;}
+}
+@keyframes cake-img-anim-1 {
+    to {top: 140px;}
+}
+@keyframes gummie-anim-1 {
+    to {top: 290px;}
+}
+@keyframes gummie-img-anim-1 {
+    to {top: 260px;}
+}
+@keyframes halvah-anim-1 {
+    to {top: 410px;}
+}
+@keyframes halvah-img-anim-1 {
+    to {top: 380px;}
+}
+
+
+
+
+//@keyframes slide-down {
+//    .container {
+//        .candy {
+//        left: 190px;
+//        top: 50px;
+//    }
+//    .cake {
+//        left: 190px;
+//        top: 170px;
+//    }
+//    .gummie {
+//        left: 190px;
+//        top: 290px;
+//    }
+//    .halvah {
+//        left: 190px;
+//        top: 410px;
+//    }
+//    .candy-img {
+//        background-position: -100px 100px;
+//        left: 550px;
+//        top: 20px;
+//    }
+//    .cake-img {
+//        background-position: 0 100px;
+//        left: 550px;
+//        top: 140px;
+//    }
+//    .gummie-img {
+//        background-position: -200px 100px;
+//        left: 550px;
+//        top: 260px;
+//    }
+//    .halvah-img {
+//        background-position: -300px 100px;
+//        left: 550px;
+//        top: 380px;
+//    }
+//    }
+//}
