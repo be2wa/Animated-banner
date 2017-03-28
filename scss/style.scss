@@ -53,6 +53,48 @@
     .halvah-img {
         background-position: -300px 100px;
     }
+    .chocolate,
+    .cheesecake,
+    .roll {
+        position: absolute;
+        text-align: center;
+    }
+    .chocolate,
+    .cheesecake {
+        width: 420px;
+        left: 230px;
+        visibility: hidden;
+        animation-name: appear;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    .chocolate {
+        top: 160px;
+    }
+    .cheesecake {
+        font-family: 'Lobster';
+        font-weight: 400;
+        top: 300px;
+    }
+    .roll {
+        font-size: 18px;
+        font-weight: 400;
+        width: 140px;
+        height: 30px;
+        top: -50px;
+        left: 50px;
+        padding-top: 5px;
+        border: 1px solid #444;
+        animation-name: roll-slide-in;
+        animation-duration: 1s;
+        animation-delay: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
     .candy {
         animation-name: candy-anim-1, candy-anim-2, candy-anim-4, candy-anim-end;
         animation-duration: 1s, 0.5s, 2s, 0.1s;
@@ -246,4 +288,17 @@
 }
 @keyframes halvah-img-anim-end {
     to {top: -150px; left: 220px;}
+}
+
+
+@keyframes appear {
+    from {visibility: hidden; transform: scale(0.1);}
+    to {visibility: visible; transform: scale(1);}
+}
+
+
+@keyframes roll-slide-in {
+    0% {top: -50px; left: 50px;}
+    50% {top: 235px; left: 50px;}
+    100% {top: 235px; left: 380px;}
 }
