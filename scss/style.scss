@@ -54,71 +54,71 @@
         background-position: -300px 100px;
     }
     .candy {
-        animation-name: candy-anim-1, candy-anim-2;
-        animation-duration: 1s, 0.5s;
-        animation-delay: 0s, 1s;
+        animation-name: candy-anim-1, candy-anim-2, candy-anim-4;
+        animation-duration: 1s, 0.5s, 2s;
+        animation-delay: 0s, 1s, 2.7s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease;
+        animation-timing-function: ease-in-out, ease, ease-in;
         animation-fill-mode: forwards;
     }
     
     .candy-img {
-        animation-name: candy-img-anim-1, candy-img-anim-2, candy-img-anim-3;
-        animation-duration: 1s, 0.5s, 0.2s;
-        animation-delay: 0s, 1s, 2s;
+        animation-name: candy-img-anim-1, candy-img-anim-2, candy-img-anim-3, candy-img-anim-4;
+        animation-duration: 1s, 0.5s, 0.2s, 2s;
+        animation-delay: 0s, 1s, 2s, 2.7s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease, ease;
+        animation-timing-function: ease-in-out, ease, steps(1), ease-in;
         animation-fill-mode: forwards;
     }
     .cake {
-        animation-name: cake-anim-1, cake-anim-2;
-        animation-duration: 1s, 0.5s;
-        animation-delay: 0s, 1.1s;
+        animation-name: cake-anim-1, cake-anim-2, cake-anim-4;
+        animation-duration: 1s, 0.5s, 2s;
+        animation-delay: 0s, 1.1s, 2.8s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease;
+        animation-timing-function: ease-in-out, ease, ease-in;
         animation-fill-mode: forwards;
     }
     
     .cake-img {
-        animation-name: cake-img-anim-1, cake-img-anim-2, cake-img-anim-3;
-        animation-duration: 1s, 0.5s, 0.2s;
-        animation-delay: 0s, 1.1s, 2.1s;
+        animation-name: cake-img-anim-1, cake-img-anim-2, cake-img-anim-3, cake-img-anim-4;
+        animation-duration: 1s, 0.5s, 0.2s, 2s;
+        animation-delay: 0s, 1.1s, 2.1s, 2.8s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease, ease;
+        animation-timing-function: ease-in-out, ease, steps(1), ease-in;
         animation-fill-mode: forwards;
     }
     .gummie {
-        animation-name: gummie-anim-1, gummie-anim-2;
-        animation-duration: 1s, 0.5s;
-        animation-delay: 0s, 1.2s;
+        animation-name: gummie-anim-1, gummie-anim-2, gummie-anim-4;
+        animation-duration: 1s, 0.5s, 2s;
+        animation-delay: 0s, 1.2s, 2.9s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease;
+        animation-timing-function: ease-in-out, ease, ease-in;
         animation-fill-mode: forwards;
     }
     
     .gummie-img {
-        animation-name: gummie-img-anim-1, gummie-img-anim-2, gummie-img-anim-3;
-        animation-duration: 1s, 0.5s, 0.2s;
-        animation-delay: 0s, 1.2s, 2.2s;
+        animation-name: gummie-img-anim-1, gummie-img-anim-2, gummie-img-anim-3, gummie-img-anim-4;
+        animation-duration: 1s, 0.5s, 0.2s, 2s;
+        animation-delay: 0s, 1.2s, 2.2s, 2.9s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease, ease;
+        animation-timing-function: ease-in-out, ease, steps(1), ease-in;
         animation-fill-mode: forwards;
     }
     .halvah {
-        animation-name: halvah-anim-1, halvah-anim-2;
-        animation-duration: 1s, 0.5s;
-        animation-delay: 0s, 1.3s;
+        animation-name: halvah-anim-1, halvah-anim-2, halvah-anim-4;
+        animation-duration: 1s, 0.5s, 2s;
+        animation-delay: 0s, 1.3s, 3s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease;
+        animation-timing-function: ease-in-out, ease, ease-in;
         animation-fill-mode: forwards;
     }
     
     .halvah-img {
-        animation-name: halvah-img-anim-1, halvah-img-anim-2, halvah-img-anim-3;
-        animation-duration: 1s, 0.5s, 0.2s;
-        animation-delay: 0s, 1.3s, 2.3s;
+        animation-name: halvah-img-anim-1, halvah-img-anim-2, halvah-img-anim-3, halvah-img-anim-4;
+        animation-duration: 1s, 0.5s, 0.2s, 2s;
+        animation-delay: 0s, 1.3s, 2.3s, 3s;
         animation-iteration-count: 1;
-        animation-timing-function: ease-in-out, ease, ease;
+        animation-timing-function: ease-in-out, ease, steps(1), ease-in;
         animation-fill-mode: forwards;
     }
 }
@@ -186,6 +186,40 @@
 }
 @keyframes halvah-img-anim-3 {
     to {background-position: -300px 0;}
+}
+
+
+@keyframes candy-anim-4 {
+    from {left: 0}
+    to {left: -1860px;}
+}
+@keyframes candy-img-anim-4 {
+    from {left: 800px}
+    to {left: -1770px;}
+}
+@keyframes cake-anim-4 {
+    from {left: 0}
+    to {left: 2080px;}
+}
+@keyframes cake-img-anim-4 {
+    from {left: 800px}
+    to {left: 2660px;}
+}
+@keyframes gummie-anim-4 {
+    from {left: 0}
+    to {left: -1860px;}
+}
+@keyframes gummie-img-anim-4 {
+    from {left: 800px}
+    to {left: -1770px;}
+}
+@keyframes halvah-anim-4 {
+    from {left: 0}
+    to {left: 2080px;}
+}
+@keyframes halvah-img-anim-4 {
+    from {left: 800px}
+    to {left: 2660px;}
 }
 
 
