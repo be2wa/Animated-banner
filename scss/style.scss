@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-//    border: 1px solid red;
 }
 
 .container {
@@ -64,11 +63,11 @@
         width: 420px;
         left: 230px;
         visibility: hidden;
-        animation-name: appear;
-        animation-duration: 1s;
-        animation-delay: 4s;
+        animation-name: appear, flip, disappear;
+        animation-duration: 1s, 0.5s, 1s;
+        animation-delay: 4s, 6s, 7s;
         animation-iteration-count: 1;
-        animation-timing-function: linear;
+        animation-timing-function: linear, ease-in-out, ease-in-out;
         animation-fill-mode: forwards;
     }
     .chocolate {
@@ -88,9 +87,9 @@
         left: 50px;
         padding-top: 5px;
         border: 1px solid #444;
-        animation-name: roll-slide-in;
-        animation-duration: 1s;
-        animation-delay: 5s;
+        animation-name: roll-slide-in, flip, disappear;
+        animation-duration: 1s, 0.5s, 1s;
+        animation-delay: 5s, 6s, 7s;
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
@@ -190,7 +189,6 @@
     to {top: 380px;}
 }
 
-
 @keyframes candy-anim-2 {
     to {left: 0;}
 }
@@ -216,7 +214,6 @@
     to {left: 800px;}
 }
 
-
 @keyframes candy-img-anim-3 {
     to {background-position: -100px 0;}
 }
@@ -229,7 +226,6 @@
 @keyframes halvah-img-anim-3 {
     to {background-position: -300px 0;}
 }
-
 
 @keyframes candy-anim-4 {
     from {left: 0}
@@ -264,7 +260,6 @@
     to {left: 2660px; transform: rotate(540deg);}
 }
 
-
 @keyframes candy-anim-end {
     to {top: -150px; left: 220px;}
 }
@@ -290,15 +285,21 @@
     to {top: -150px; left: 220px;}
 }
 
-
 @keyframes appear {
     from {visibility: hidden; transform: scale(0.1);}
     to {visibility: visible; transform: scale(1);}
 }
 
-
 @keyframes roll-slide-in {
     0% {top: -50px; left: 50px;}
     50% {top: 235px; left: 50px;}
     100% {top: 235px; left: 380px;}
+}
+
+@keyframes flip {
+    to {transform: rotateX(360deg);}
+}
+
+@keyframes disappear {
+    to {transform: scaleX(0); opacity: 0;}
 }
